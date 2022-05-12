@@ -7,7 +7,7 @@ greetings('param3t3r');
 function repeatContent(int $count = 1):void 
 {
     for($i=0;$i <=$count;$i++){
-        greetings("is school hard");
+        greetings(" is school hard ");
 
     }
 }
