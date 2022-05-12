@@ -1,5 +1,6 @@
 <?php
-function greetings(): void
+function greetings(string $text): void
 {
-    echo "hello functions";
+    echo "$text";
 }
+greetings('param3t3r');
