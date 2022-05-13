@@ -32,3 +32,15 @@ echo calculator(1,'+',2)."<br/>";
 echo calculator(1,'-',2)."<br/>";
 echo calculator(1,'/',2)."<br/>";
 echo calculator(1,'*',2)."<br/>";
+function calculator2(float $num1,string $opp, float $num2,):float{
+        if(!in_array($opp,['+','-','*','/'])){
+    
+        }
+        $fucnt_name=['+'=>'sum',
+                     '-'=>'diff',
+                     '/'=>'div',
+                     '*'=>'mult'];
+        return $fucnt_name[$opp]($num1,$num2);                  
+    }
+    echo calculator2(1,'+',3);
+    
