@@ -1,25 +1,33 @@
 <?php
-function sum(float ...$nums):float{
-$add=0;
- foreach($nums as $num){
-$add=($num+$add);
 
-    }
-    return $add;
-    
+function sum(float $num1,float $num2): float{
+    return $num1 + $num2;    
+}
+function diff(float $num1,float $num2): float{
+    return $num1 - $num2;    
+}
+function div(float $num1,float $num2): float{
+    return $num1 / $num2;    
+}
+function mult(float $num1,float $num2): float{
+    return $num1 * $num2;    
 }
 
-function diff(float ...$num1):float{
-    $diff=0;
-    foreach($num1 as $num){
-        $add=($num=$diff);
-    }
-    return $diff;
+function calculator (string $userformula): float
+
+{  
+    echo ($userformula);
+    preg_match_all('!\d+!', $userformula, $matches);
+
+print_r($matches);
+
+echo ($userformula);
+    preg_match_all('!\D+!', $userformula, $opp);
+
+print_r($opp);
+
+     return(0);
+
+
 }
-function div(float ...$num2):float{
-    $div=0;
-    return $num1 / $num2;
-}
-function mult(float $num1,float $num2):float{
-    return $num1 * $num2;
-}
+echo calculator('2-5*10');
